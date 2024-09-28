@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Temperamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Instruções -->
+        <section id="instructions" class="section">
+            <div class="image-container">
+                <img src="https://yt3.googleusercontent.com/o4f-6r3nQVHE0TFqEN0Oxv1ZlV-SJcALMbXTEm7mDnXCfj9UJQX1ku6QAeENPR5SgIZ3EHWdvJE=s900-c-k-c0x00ffffff-no-rj" alt="Descrição da Imagem" class="centered-image">
+                <p class="instagram-handle">@TEMPERAMENTANDO.OFICIAL</p>
+            </div>
+            <h2>Instruções</h2>
+            <p>Este teste é dividido em duas partes:</p>
+            <ul>
+                <li><strong>Primeira Parte:</strong> Determinar se o temperamento é quente ou frio.</li>
+                <li><strong>Segunda Parte:</strong> Determinar se é úmido ou seco.</li>
+            </ul>
+            <p>A combinação dessas características resulta no seu temperamento. Não há certo ou errado, apenas o que é mais natural para você.</p>
+            <p>Para obter o melhor resultado, evite manipular suas respostas.</p>
+            <p>Você deve marcar entre "A e B".</p>
+            <button id="start-part1" class="btn">Iniciar Primeira Parte</button>
+        </section>
+
+        <!-- Parte 1 do Teste -->
+        <section id="part1" class="section hidden">
+            <h2>Primeira Parte - 19 Questões</h2>
+            <div id="questions-part1" class="questions-container">
+                <!-- Questões serão geradas dinamicamente -->
+            </div>
+            <button id="submit-part1" class="btn">Enviar Respostas da Primeira Parte</button>
+        </section>
+
+        <!-- Parte 2 do Teste -->
+        <section id="part2" class="section hidden">
+            <h2>Segunda Parte - 13 Questões</h2>
+            <div id="questions-part2" class="questions-container">
+                <!-- Questões serão geradas dinamicamente -->
+            </div>
+            <button id="submit-part2" class="btn">Enviar Respostas da Segunda Parte</button>
+        </section>
+
+        <!-- Resultado -->
+        <section id="result" class="section hidden">
+            <h2>Resultado Final</h2>
+            <div id="temperament-details" class="result-details">
+                <!-- Detalhes do resultado serão gerados dinamicamente -->
+            </div>
+            <button id="finish-test" class="btn">Finalizar Teste</button>
+        </section>
+
+        <!-- Botão para alternar tema -->
+        <button id="toggle-theme" class="btn">Alternar Tema Escuro</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://4kwallpapers.com/images/wallpapers/purple-planet-dark-background-saturn-astronomy-3840x2160-6425.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo do container principal */
+#app {
+    width: 80%;
+    max-width: 600px;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilos de cabeçalho */
+h2 {
+    color: #f39c12;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos de seção */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Estilos de botões */
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos das questões */
+.questions-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos dos detalhes do resultado */
+.result-details {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para a visualização em dispositivos menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    #app {
+        padding: 15px;
+        width: 95%;
+    }
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Tema escuro */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .question {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo de parágrafo */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilos da imagem e Instagram */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+.centered-image {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Manter a imagem quadrada */
+    object-fit: cover; /* Para garantir que a imagem mantenha a proporção */
+}
+
+.instagram-handle {
+    font-size: 1.2em; /* Ajuste o tamanho do texto conforme necessário */
+    color: #a2a2a2; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento acima do texto do Instagram */
+}
